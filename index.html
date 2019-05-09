@@ -117,7 +117,9 @@
             );
         }, 8000);
         
-        for (var i = 0; i < 16; i++) {
+        // i < a 控制次數器 越大越快
+        let a = 16;
+        for (var i = 0; i < a; i++) {
             (function(num){
                 setTimeout(function(){
                     console.log(num);
@@ -130,7 +132,7 @@
                             {"src":"./image/coverpage/peopleanimate/people1.png"}
                         );
                     }
-                }, 500 * (i + 1));
+                }, ( 8000 / a ) * (i + 1));
             })(i);
         }
     };
