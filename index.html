@@ -45,7 +45,7 @@
                             <img src="./image/coverpage/slogan.png" class="sloganpic img-fluid">
                         </div>
                         <div class="people">
-                            <img src="./image/coverpage/people.png" class="peoplepic img-fluid">
+                            <img src="./image/coverpage/peopleanimate/people1.png" class="peoplepic img-fluid">
                         </div>
                         <div class="percentnumber">
                             <div class="percent">0%</div>
@@ -75,31 +75,31 @@
 
 
     <script>
-        $(window).on("load", function(){
-            function loadingState(){
-                var currentCounter = 1;
-    
-                function counter() {
-                    var percent = setInterval(function(){
-                        var currentVal = currentCounter++;
-                        $(".percent").text(currentVal + "%");
-                        if(currentVal == 62) {
-                            counter.set(7);
-                        } else if(currentVal == 100) {
-                            clearInterval(percent);
-                        }
-                    }, 40);
-                };
-    
-                counter.set = function(value) {
-                    currentCounter  = value + currentCounter;
-                };
-                return counter;
+    $(window).on("load", function(){
+        function loadingState(){
+            var currentCounter = 1;
+
+            function counter() {
+                var percent = setInterval(function(){
+                    var currentVal = currentCounter++;
+                    $(".percent").text(currentVal + "%");
+                    if(currentVal == 62) {
+                        counter.set(7);
+                    } else if(currentVal == 100) {
+                        clearInterval(percent);
+                    }
+                }, 40);
             };
-            var counter = loadingState();
-            counter();
-        });
-        </script>
+
+            counter.set = function(value) {
+                currentCounter  = value + currentCounter;
+            };
+            return counter;
+        };
+        var counter = loadingState();
+        counter();
+    });
+    </script>
     <script src="http://www.w3school.com.cn/jquery/jquery.js"></script>
 
     <script>
@@ -116,10 +116,25 @@
                 {"display":"none"}
             );
         }, 8000);
+        
+        for (var i = 0; i < 16; i++) {
+            (function(num){
+                setTimeout(function(){
+                    console.log(num);
+                    if(num%2 == 0){
+                        $('.people img').attr(
+                            {"src":"./image/coverpage/peopleanimate/people8.png"}
+                        );
+                    }else{
+                        $('.people img').attr(
+                            {"src":"./image/coverpage/peopleanimate/people1.png"}
+                        );
+                    }
+                }, 500 * (i + 1));
+            })(i);
+        }
     };
     setanimation();
-
-
     </script>
 </body>
 
