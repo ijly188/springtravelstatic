@@ -38,17 +38,24 @@
         <div class="container">
             <div class="index_wrap">
                 <div class="coverpage_wrap">
-                    <div class="logosloganwrap">
-                        <img src="./image/coverpage/logo.png" class="logopic img-fluid">
-                        <img src="./image/coverpage/slogan.png" class="sloganpic img-fluid">
+                    <div class="version_1"><!-- those pages in 5 seconds -->
+                        <div class="logosloganwrap">
+                            <img src="./image/coverpage/logo.png" class="logopic img-fluid">
+                            <img src="./image/coverpage/slogan.png" class="sloganpic img-fluid">
+                        </div>
+                        <div class="people">
+                            <img src="./image/coverpage/peopleanimate/people1.png" class="peoplepic img-fluid">
+                        </div>
+                        <div class="percentnumber">
+                            <div class="percent">0%</div>
+                            <div class="animated yt-loader"></div>
+                            <div class="dotline"></div>
+                        </div>
                     </div>
-                    <div class="people">
-                        <img src="./image/coverpage/people.png" class="peoplepic img-fluid">
-                    </div>
-                    <div class="percentnumber">
-                        <div class="percent">0%</div>
-                        <div class="animated yt-loader"></div>
-                        <div class="dotline"></div>
+                    <div class="verison_2"><!-- those pages in 5-8 seconds -->
+                        <div class="bigmrt_wrap">
+                            <img src="./image/coverpage/mrt-B.png" alt="" srcset="" class="mrtanimation mrtmove">
+                        </div>
                     </div>
                 </div>
                 Index index_wrap
@@ -64,6 +71,72 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+    <script>
+    $(window).on("load", function(){
+        function loadingState(){
+            var currentCounter = 1;
+
+            function counter() {
+                var percent = setInterval(function(){
+                    var currentVal = currentCounter++;
+                    $(".percent").text(currentVal + "%");
+                    if(currentVal == 62) {
+                        counter.set(7);
+                    } else if(currentVal == 100) {
+                        clearInterval(percent);
+                    }
+                }, 40);
+            };
+
+            counter.set = function(value) {
+                currentCounter  = value + currentCounter;
+            };
+            return counter;
+        };
+        var counter = loadingState();
+        counter();
+    });
+    </script>
+    <script src="http://www.w3school.com.cn/jquery/jquery.js"></script>
+
+    <script>
+    // set the 5-8 animation
+    function setanimation(){
+        window.setTimeout(function(){
+            $('.verison_2 .mrtmove').animate(
+                {"margin-left":"100%"}, 3000
+            );
+        }, 5000);
+
+        window.setTimeout(function(){
+            $('.coverpage_wrap').css(
+                {"display":"none"}
+            );
+        }, 8000);
+        
+        // i < a 控制次數器 越大越快
+        let a = 16;
+        for (var i = 0; i < a; i++) {
+            (function(num){
+                setTimeout(function(){
+                    console.log(num);
+                    if(num%2 == 0){
+                        $('.people img').attr(
+                            {"src":"./image/coverpage/peopleanimate/people8.png"}
+                        );
+                    }else{
+                        $('.people img').attr(
+                            {"src":"./image/coverpage/peopleanimate/people1.png"}
+                        );
+                    }
+                }, ( 8000 / a ) * (i + 1));
+            })(i);
+        }
+    };
+    setanimation();
+    </script>
 </body>
 
 </html>
