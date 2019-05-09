@@ -1,3 +1,4 @@
+/* body header footer 共用的css */
 body{
     background-color: #FCBC76;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Microsoft JhengHei UI", "Microsoft JhengHei";
@@ -36,4 +37,25 @@ body{
 .navbar-light .navbar-nav .active .nav-link {
   color: #fff;
   border-bottom: 1px solid #fff;
+}
+.inner_wrap{
+  position: relative;
+  margin: 2rem 0 0 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+.springtravel_info_wrap{
+  background-color: #D5EA50;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.grass_inner{
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  fill:#D5EA50;
+}
+.grass_footer{
+  margin: -1px 0 0 0;
 }
