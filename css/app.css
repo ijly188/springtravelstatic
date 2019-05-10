@@ -15,6 +15,27 @@ p{
   line-height: 2rem;
   text-align: justify;
 }
+.btn-primary{
+  background-color: #f5912e;
+  border-color: #f5912e;
+}
+.btn-primary:hover{
+  background-color: #f47f0b;
+  border-color: #f47f0b;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  background-color: #f47f0b;
+  border-color: #f47f0b;
+  color: #fff;
+}
+.btn-primary.focus, .btn-primary:focus{
+  box-shadow: 0 0 0 0.2rem rgba(245, 145, 46, 0.5);
+}
+.btn-primary img{
+  display: inline-block;
+  width: 18px;
+  vertical-align: text-bottom;
+}
 /* 導航欄 css */
 .navbar{
   padding: 1.875rem 0 0 0;
