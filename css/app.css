@@ -1,7 +1,19 @@
-/* body header footer 共用的css */
+/* body的css */
 body{
+    color: #5e5d5d;
     background-color: #FCBC76;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Microsoft JhengHei UI", "Microsoft JhengHei";
+}
+h2{
+  margin: 0 0 1.875rem 0;
+  color: #35a936;
+  font-size: 2.8125rem;
+}
+p{
+  margin: 0 0 1.875rem 0;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  text-align: justify;
 }
 /* 導航欄 css */
 .navbar{
@@ -38,17 +50,19 @@ body{
   color: #fff;
   border-bottom: 1px solid #fff;
 }
-.inner_wrap{
+/* 各內頁框架 css */
+.content_wrap{
   position: relative;
   margin: 2rem 0 0 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
-.springtravel_info_wrap{
+.inner_wrap{
   background-color: #D5EA50;
   width: 100%;
   height: auto;
+  padding: 0 6.25rem;
   text-align: center;
 }
 .grass_inner{

@@ -1,7 +1,7 @@
 .coverpage_wrap {
-    background: #fec485;
     display: block;
     height: 100%;
+    background-color: #FCBC76;
     left: 0;
     position: fixed;
     top: 0;
@@ -34,7 +34,7 @@
       text-align: center;
   }
   .percent {
-    
+
   }
   .dotline {
     border-top: 2px dotted;
@@ -236,4 +236,3 @@
       padding-bottom: 50px;
     }
   }
-  

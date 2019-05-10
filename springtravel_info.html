@@ -10,71 +10,125 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- custom -->
     <link rel="stylesheet" href="./css/app.css">
-
+    <link rel="stylesheet" href="./css/info.css">
 
     <title>台北春遊</title>
 
 </head>
 
 <body>
-    <div id="app">
-        <header class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent">
-            <div class="container">
-                <a href="./index.html" class="navbar-brand router-link-exact-active router-link-active">
-                    <img src="./image/logo.svg" alt="台北小春">
-                </a>
-                <button type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-                <div id="navbarsExample07" class="collapse navbar-collapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a href="./springtravel_info.html" class="nav-link">春遊介紹</a></li>
-                        <li class="nav-item"><a href="./springtravel_lottery.html" class="nav-link">抽獎說明</a></li>
-                        <li class="nav-item"><a href="./springtravel_activity.html" class="nav-link">春季活動資訊</a></li>
-                        <!-- <li class="nav-item"><a href="./springtravel_tour.html" class="nav-link">台北必遊</a></li> -->
-                        <li class="nav-item"><a href="./springtravel_film.html" class="nav-link">網紅推薦</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <div class="container">
-            <div class="inner_wrap">
-              <svg version="1.1" class="grass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 274" xml:space="preserve">
-                <path class="grass_inner" d="M1181.7,185.3c-16.8-43.5-59.8-80.7-107.1-86.1c-27.7-3.2-56.2,3.9-83.2-5c-5.3-1.7-10.1-4-14.7-6.5 c-12.6-6.9-23.1-16.1-35.1-23.6c-29.1-18.3-68.1-27.6-105.7-29.8c-26.7-1.5-52.2,1.2-77.1,5.5c-23.9,4.1-48.5-1-68.3-15 C668.4,9.1,641.4,0,612.3,0c-24.5,0-47.5,6.5-67.4,17.9c-20.7,11.9-45.2,15-68.5,9.3l-0.4-0.1c-34.7-8.4-71-12.4-106.7-9.4 c-37.5,3.1-61.8,22.8-95.6,36.9c-42.9,17.9-92.2,15.2-137.4,23C50.7,92.4,0,190.9,0,274.1h1200 C1200,242.7,1189.2,204.6,1181.7,185.3"/>
-              </svg>
-              <div class="springtravel_info_wrap">
-                <div class="row">
-                  <div class="col-12">
-                    <img class="img-fluid" src="image/people.svg" alt="">
-                  </div>
-                  <h2 class="col-12">
-                    春遊介紹
-                  </h2>
-                  <p class="col-12">
-                    台北，有著豐富的風景名勝，知名的如中正紀念堂、台北一○ 一、龍山寺等等；也有深具濃厚文化氣質的街頭巷弄；或低調的、浸染著台北生活氣息之小鎮們。而這些景點們，也正是交織出台北深度與厚度的緣起，更是要感受台北氛圍時，不能錯過的在地風采。在這春暖花開之際，讓我們一起發掘隱藏在台北各區的春景，一起來尋找台北小春，一起再放一次春假！
-                  </p>
-                  <div class="col-12 embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                  </div>
-                  <h2 class="col-12">
-                    補助說明
-                  </h2>
-                  <div class="col-6">
-                    自由行旅客
-                  </div>
-                  <div class="col-6">
-                    團體旅遊
-                  </div>
-                </div>
-
-              </div>
-              <svg version="1.1" class="grass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 314" xml:space="preserve">
-                <path class="grass_inner" d="M18.4,145.2c16.5,43.7,59.9,80.8,107.1,86.2c27.7,3.2,56.2-3.9,83.2,5c5.3,1.7,10.1,4,14.7,6.5 c12.6,6.9,23.1,16.1,35.2,23.6c29.1,18.3,68.1,27.6,105.8,29.8c86,4.9,158.9-34.3,243-26.2c40.2,3.9,78.4,23.9,117.1,33.4 c34.7,8.4,71.1,12.4,106.7,9.4c37.5-3.1,61.8-22.8,95.6-36.9c43-17.9,92.2-15.2,137.4-23C1150,238.2,1200,182.6,1200,0.1H0.1 C0.1,57.8-2.4,90.3,18.4,145.2"/>
-              </svg>
-            </div>
-            <div class="footer_wrap">
-                Footer wrap
-            </div>
+  <div id="app">
+    <header class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand router-link-exact-active router-link-active">
+          <img src="./image/logo.svg" alt="台北小春">
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <div id="navbarsExample07" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a href="./springtravel_info.html" class="nav-link">春遊介紹</a></li>
+            <li class="nav-item"><a href="./springtravel_lottery.html" class="nav-link">抽獎說明</a></li>
+            <li class="nav-item"><a href="./springtravel_activity.html" class="nav-link">春季活動資訊</a></li>
+            <li class="nav-item"><a href="./springtravel_tour.html" class="nav-link">台北必遊</a></li>
+            <li class="nav-item"><a href="./springtravel_film.html" class="nav-link">網紅推薦</a></li>
+          </ul>
         </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="content_wrap">
+        <svg version="1.1" class="grass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 274" xml:space="preserve">
+          <path class="grass_inner" d="M1181.7,185.3c-16.8-43.5-59.8-80.7-107.1-86.1c-27.7-3.2-56.2,3.9-83.2-5c-5.3-1.7-10.1-4-14.7-6.5 c-12.6-6.9-23.1-16.1-35.1-23.6c-29.1-18.3-68.1-27.6-105.7-29.8c-26.7-1.5-52.2,1.2-77.1,5.5c-23.9,4.1-48.5-1-68.3-15 C668.4,9.1,641.4,0,612.3,0c-24.5,0-47.5,6.5-67.4,17.9c-20.7,11.9-45.2,15-68.5,9.3l-0.4-0.1c-34.7-8.4-71-12.4-106.7-9.4 c-37.5,3.1-61.8,22.8-95.6,36.9c-42.9,17.9-92.2,15.2-137.4,23C50.7,92.4,0,190.9,0,274.1h1200 C1200,242.7,1189.2,204.6,1181.7,185.3"/>
+        </svg>
+        <div class="inner_wrap springtravel_info_wrap">
+          <div class="row">
+            <div class="col-12">
+              <img class="img-fluid img-people" src="image/people.svg" alt="">
+            </div>
+            <h2 class="col-12">
+              春遊介紹
+            </h2>
+            <p class="col-12">
+              台北，有著豐富的風景名勝，知名的如中正紀念堂、台北一○ 一、龍山寺等等；也有深具濃厚文化氣質的街頭巷弄；或低調的、浸染著台北生活氣息之小鎮們。而這些景點們，也正是交織出台北深度與厚度的緣起，更是要感受台北氛圍時，不能錯過的在地風采。在這春暖花開之際，讓我們一起發掘隱藏在台北各區的春景，一起來尋找台北小春，一起再放一次春假！
+            </p>
+          </div>
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-md-7 video-area embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="col"></div>
+            <div class="col-12">
+              <h5 class="video-title">我們的台北小春</h5>
+            </div>
+          </div>
+          <div class="row">
+            <h2 class="col-12">
+              補助說明
+            </h2>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="subsidy-area">
+                <h3>自由行旅客</h3>
+                <p>
+                  台北市春遊方案預計從108年4月1日至6月30日，凡週日至週四入住台北市合法旅館及民宿，補助金額為每人每房500元，且入住旅客可以用7折優惠價格購買雙層觀光巴士票券！而18至40歲青年入住經典小鎮民宿，可再多1次500元住宿優惠！
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="rounded-circle img-circle">
+                      <img src="image/info/alone.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="rounded-circle img-circle">
+                      <img src="image/info/alone2.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="rounded-circle img-circle">
+                      <img src="image/info/alone3.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <a href="##" class="btn btn-primary" target="_blank">查看更多</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="subsidy-area">
+                <h3>團體旅遊</h3>
+                <p>
+                  團體旅遊也可以透過旅行社，自主揪團或是企業行號員工旅遊來申請團體補助，每人每日獎勵500元，10人以上成行，每團上限3萬元，若「前往離島旅遊」、「入住星級旅館」、「企業員工旅遊加碼」可以再提高上限至5萬元。要安排旅遊行程的民眾快來把握！
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="rounded-circle img-circle">
+                      <img src="image/info/group.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="rounded-circle img-circle">
+                      <img src="image/info/group2.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="rounded-circle img-circle">
+                      <img src="image/info/group3.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <a href="##" class="btn btn-primary" target="_blank">查看更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg version="1.1" class="grass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 314" xml:space="preserve">
+          <path class="grass_inner" d="M18.4,145.2c16.5,43.7,59.9,80.8,107.1,86.2c27.7,3.2,56.2-3.9,83.2,5c5.3,1.7,10.1,4,14.7,6.5 c12.6,6.9,23.1,16.1,35.2,23.6c29.1,18.3,68.1,27.6,105.8,29.8c86,4.9,158.9-34.3,243-26.2c40.2,3.9,78.4,23.9,117.1,33.4 c34.7,8.4,71.1,12.4,106.7,9.4c37.5-3.1,61.8-22.8,95.6-36.9c43-17.9,92.2-15.2,137.4-23C1150,238.2,1200,182.6,1200,0.1H0.1 C0.1,57.8-2.4,90.3,18.4,145.2"/>
+        </svg>
+      </div>
     </div>
+    <div class="footer_wrap">
+      Footer wrap
+    </div>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

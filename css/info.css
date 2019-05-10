@@ -1,0 +1,34 @@
+.springtravel_info_wrap .img-people{
+  margin: -11% 0 2.8125rem 0;
+}
+.springtravel_info_wrap .video-area{
+  border-radius: 20px;
+  margin: 0 0 1rem 0;
+}
+.springtravel_info_wrap .video-title{
+  margin: 0 0 6.25rem 0;
+  font-weight: normal;
+  font-size: 1.125rem;
+}
+.springtravel_info_wrap .subsidy-area{
+  padding: 2.5rem;
+  background-color: #35a936;
+  color: #ffffff;
+  border-radius: 20%;
+}
+.springtravel_info_wrap .subsidy-area h3{
+  margin: 0 0 1.875rem 0;
+}
+.springtravel_info_wrap .subsidy-area p{
+  font-weight: 300;
+}
+.springtravel_info_wrap .subsidy-area .img-circle{
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid #d5ea50;
+}
+.springtravel_info_wrap .subsidy-area .img-circle img{
+  max-width: 80%;
+}
