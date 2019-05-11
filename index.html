@@ -39,7 +39,7 @@
         </header>
         <div class="container">
             <div class="index_wrap">
-                <div class="coverpage_wrap">
+                <div class="coverpage_wrap d-none">
                     <div class="version_1"><!-- those pages in 5 seconds -->
                         <div class="logosloganwrap">
                             <img src="./image/coverpage/logo.png" class="logopic img-fluid">
@@ -69,6 +69,14 @@
                 <img src="./image/index/drawing.png" alt="" srcset="" class="drawingpic">
                 <div class="picbottombgcolor"></div>
             </div>
+        </div>
+        <div class="index_pad_wrap">
+            <img src="./image/index_pad_bg.png" alt="" srcset="" class="index_pad_content">
+            <div class="bottomgreenbgcolor"></div>
+        </div>
+        <div class="index_mobile_wrap">
+                <img src="./image/index_mobile_bg.png" alt="" srcset="" class="index_mobile_content">
+                <div class="bottomgreenbgcolor"></div>
         </div>
         <div class="mobile_menu_wrap d-none">
             <button type="button" class="close menu_close" aria-label="Close">
@@ -144,7 +152,6 @@
         for (var i = 0; i < a; i++) {
             (function(num){
                 setTimeout(function(){
-                    console.log(num);
                     if(num%2 == 0){
                         $('.people img').attr(
                             {"src":"./image/coverpage/peopleanimate/people8.png"}
