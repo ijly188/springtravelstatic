@@ -18,6 +18,7 @@ p{
 .btn-primary{
   background-color: #f5912e;
   border-color: #f5912e;
+  border-radius: 40px;
 }
 .btn-primary:hover{
   background-color: #f47f0b;

@@ -43,11 +43,17 @@
   font-weight: 300;
 }
 .springtravel_info_wrap .subsidy-area .img-circle{
+  position: relative;
   width: 100px;
   height: 100px;
   display: inline-flex;
   justify-content: center;
   border: 1px solid #d5ea50;
+}
+.springtravel_info_wrap .subsidy-area .img-circle img.alone-img{
+  position: absolute;
+  width: 35px;
+  bottom: -25px;
 }
 .springtravel_info_wrap .subsidy-area .img-circle img{
   max-width: 80%;
