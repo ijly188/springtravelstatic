@@ -23,7 +23,9 @@
                 <a href="./index.html" class="navbar-brand router-link-exact-active router-link-active">
                     <img src="./image/logo.svg" alt="台北小春">
                 </a>
-                <button type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+                <button type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler menu-start-toggle-action-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                </button>
                 <div id="navbarsExample07" class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a href="./springtravel_info.html" class="nav-link">春遊介紹</a></li>
@@ -58,10 +60,31 @@
                         </div>
                     </div>
                 </div>
-                Index index_wrap
             </div>
-            <div class="footer_wrap">
-                Footer wrap
+        </div>
+        <div class="indexpicwrap">
+            <div class="pictoppart">
+            </div>
+            <div class="picbottompart">
+                <img src="./image/index/drawing.png" alt="" srcset="" class="drawingpic">
+                <div class="picbottombgcolor"></div>
+            </div>
+        </div>
+        <div class="mobile_menu_wrap d-none">
+            <button type="button" class="close menu_close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <a href="./index.html" class="navbar-brand router-link-exact-active router-link-active menu_wrap_brand">
+                <img src="./image/logo.svg" alt="台北小春">
+            </a>
+            <div id="mobile_menu" class="">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="./springtravel_info.html" class="nav-link text-white">春遊介紹</a></li>
+                    <li class="nav-item"><a href="./springtravel_lottery.html" class="nav-link text-white">抽獎說明</a></li>
+                    <li class="nav-item"><a href="./springtravel_activity.html" class="nav-link text-white">春季活動資訊</a></li>
+                    <!-- <li class="nav-item"><a href="./springtravel_tour.html" class="nav-link text-white">台北必遊</a></li> -->
+                    <li class="nav-item"><a href="./springtravel_film.html" class="nav-link text-white">網紅推薦</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -136,6 +159,17 @@
         }
     };
     setanimation();
+    </script>
+
+    <!-- mobile effect -->
+    <script>
+    $('.menu_close').click(function(){
+        $('.mobile_menu_wrap').addClass('d-none');
+    });
+    $('.menu-start-toggle-action-btn').click(function(){
+        $('.mobile_menu_wrap').removeClass('d-none');
+        $('#navbarsExample07').addClass('d-none');
+    });
     </script>
 </body>
 
