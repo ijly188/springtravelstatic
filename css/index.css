@@ -213,10 +213,99 @@
 /* version 2 = 5-8seconds end */
 
 
-/* disappear start */
 
 
-/* disappear end */
+/* the index layout start */
+
+.indexpicwrap {
+	/* min-width: 1920px; */
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100vh;
+	display: block;
+	width: 100%;
+}
+
+.pictoppart {
+	height: 10%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.picbottompart {
+	display: block;
+	height: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.picbottombgcolor {
+	background: #d5ea50;
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.drawingpic {
+	width: 100%;
+	height: auto;
+}
+
+
+/* the index layout end */
+
+
+/* mobile cover menu start */
+
+.mobile_menu_wrap {
+	background: #f36902;
+	display: block;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1050;
+}
+
+.mobile_menu_wrap a.menu_wrap_brand {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -84px;
+}
+
+.mobile_menu_wrap .menu_close {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 200;
+	margin-right: 5%;
+	margin-top: 1%;
+}
+
+#mobile_menu .navbar-nav {
+	margin: 0 0 0 -48px;
+	padding: 0;
+	top: 40%;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+}
+
+.menu-start-toggle-action-btn {
+	border: 0;
+	color: #f36902!important;
+}
+
+
+/* mobile cover menu end */
 
 @media (max-width: 575.98px) {
 	.container .navbar-brand.router-link-exact-active.router-link-active {
@@ -333,6 +422,10 @@
     .index_mobile_wrap{
         display: none;
     }
+	.picbottombgcolor {
+		height: 72.9%;
+		bottom: 0%;
+	}
 }
 
 @media (min-width: 1200px) and (max-width: 1599.98px) {
@@ -360,6 +453,10 @@
     .index_mobile_wrap{
         display: none;
     }
+	.picbottombgcolor {
+		height: 72.9%;
+		bottom: 0%;
+	}
 }
 
 @media (min-width: 1600px) {
@@ -386,99 +483,9 @@
     }
     .index_mobile_wrap{
         display: none;
-    }
+	}
+	.picbottombgcolor {
+		height: 72.9%;
+		bottom: 0%;
+	}
 }
-
-
-/* the index layout start */
-
-.indexpicwrap {
-	/* min-width: 1920px; */
-	position: absolute;
-	width: 100%;
-	top: 0;
-	height: 100vh;
-	display: block;
-	width: 100%;
-}
-
-.pictoppart {
-	height: 10%;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-
-.picbottompart {
-	display: block;
-	height: 90%;
-	margin: 0 auto;
-	overflow: hidden;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-
-.picbottombgcolor {
-	background: #d5ea50;
-	display: block;
-	height: 100%;
-	position: absolute;
-	top: 24.4%;
-	width: 100%;
-	z-index: -1;
-}
-
-.drawingpic {
-	width: 100%;
-	height: auto;
-}
-
-
-/* the index layout end */
-
-
-/* mobile cover menu start */
-
-.mobile_menu_wrap {
-	background: #f36902;
-	display: block;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1050;
-}
-
-.mobile_menu_wrap a.menu_wrap_brand {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	margin-left: -84px;
-}
-
-.mobile_menu_wrap .menu_close {
-	color: #fff;
-	font-size: 50px;
-	font-weight: 200;
-	margin-right: 5%;
-	margin-top: 1%;
-}
-
-#mobile_menu .navbar-nav {
-	margin: 0 0 0 -48px;
-	padding: 0;
-	top: 40%;
-	position: absolute;
-	left: 50%;
-	text-align: center;
-}
-
-.menu-start-toggle-action-btn {
-	border: 0;
-	color: #f36902!important;
-}
-
-
-/* mobile cover menu end */

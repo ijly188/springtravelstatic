@@ -1,0 +1,85 @@
+.springtravel_info_wrap{
+
+}
+.pageheader{
+    /* margin-top: -100px; */
+}
+.lottery_introinfo{
+    padding: 33px 0 0 0;
+}
+.titlewrap{
+    position: absolute;
+    left: 50%;
+    margin: 70px 0 0 -247px;
+    text-align: center;
+}
+.main-directory{
+    margin-bottom: 27px;
+}
+.secondary-directory{
+    color: #35a936;
+    font-size: 27px;
+    margin-bottom: 33px;
+}
+.twocolwrap{
+    padding: 36px 0 0 0;
+}
+
+.twocolwrap .leftpart{
+
+}
+.twocolwrap .rightpart{
+    
+}
+
+.twocolwrap .leftpart, .twocolwrap .rightpart{
+    padding: 0 15px;
+}
+
+.twocolwrap .leftpart .leftpartcontent, .twocolwrap .rightpart .rightpartcontent{
+    border: 1px dotted #35a936;
+    border-radius: 25%;
+    padding: 20px;
+}
+
+.twocolwrap .leftpart .title, .twocolwrap .rightpart .title{
+    font-size: 28px;
+    color: #35a936;
+}
+
+.circlelist{
+    padding: 0;
+}
+.circlelist .circle{
+    border: 2px solid #35a936;
+    border-radius: 50%;
+    color: #35a936;
+    font-weight: 600;
+    height: 100px;
+    list-style: none;
+    line-height: 100px;
+    margin: 5px;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+}
+
+.bottombtn{
+    border-radius: 35px 35px;
+    color: #fff;
+    width: 150px;
+    font-weight: 200;
+    height: 58px;
+    line-height: 58px;
+    margin: 0 auto;
+    background-color: #f5912e;
+}
+
+.noticearea{
+    margin-top: 77px;
+}
+
+.noticewrap .notice{
+    text-align: left;
+    padding: 0 0 0 1rem;
+}
