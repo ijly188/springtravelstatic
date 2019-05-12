@@ -194,19 +194,19 @@
                     status = false;
                 }
                 if (idcode == '') {
-                    $('#phone').css('border', '1px solid #ff0000');
+                    $('#idcode').css('border', '1px solid #ff0000');
                     status = false;
                 }
                 if (birthday == '') {
-                    $('#phone').css('border', '1px solid #ff0000');
+                    $('#birthday').css('border', '1px solid #ff0000');
                     status = false;
                 }
-                if (phone == '') {
-                    $('#phone').css('border', '1px solid #ff0000');
+                if (phonenumber == '') {
+                    $('#phonenumber').css('border', '1px solid #ff0000');
                     status = false;
                 }
                 if (email == '') {
-                    $('#phone').css('border', '1px solid #ff0000');
+                    $('#email').css('border', '1px solid #ff0000');
                     status = false;
                 }
                 // 如果 �必填欄位都過了 才會到這邊
@@ -216,11 +216,11 @@
                     var filltime = currentdate.getFullYear() + "/" + (currentdate.getMonth() + 1) + "/" + currentdate.getDate() + "  " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds();
                     // 打包 要的資料
                     var data = {
-                        'name': name,
-                        'idcode': idcode,
                         'birthday': birthday,
-                        'phone': phone,
-                        'email': email,
+                        'customemail': email,
+                        'idcode': idcode,
+                        'name': name,
+                        'phonenumber': phonenumber,
                         'time': filltime,
                      }
                      // 呼叫 send ajax function
@@ -242,7 +242,6 @@
                 dataType: "JSON",
                 // 成功送出 會回頭觸發下面這塊感謝
                 success: function(response) {
-                   console.log('sfa')
                     console.log(response);
                 }
             });
