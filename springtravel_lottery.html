@@ -201,8 +201,8 @@
                     $('#birthday').css('border', '1px solid #ff0000');
                     status = false;
                 }
-                if (phonenumber == '') {
-                    $('#phonenumber').css('border', '1px solid #ff0000');
+                if (phone == '') {
+                    $('#phone').css('border', '1px solid #ff0000');
                     status = false;
                 }
                 if (email == '') {
@@ -217,10 +217,10 @@
                     // 打包 要的資料
                     var data = {
                         'birthday': birthday,
-                        'customemail': email,
+                        'email': email,
                         'idcode': idcode,
                         'name': name,
-                        'phonenumber': phonenumber,
+                        'phone': phone,
                         'time': filltime,
                      }
                      // 呼叫 send ajax function
