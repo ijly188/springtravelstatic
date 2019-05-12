@@ -19,6 +19,7 @@ p{
   background-color: #f5912e;
   border-color: #f5912e;
   border-radius: 40px;
+  padding: 1rem 0.75rem;
 }
 .btn-primary:hover{
   background-color: #f47f0b;
@@ -94,4 +95,55 @@ p{
 }
 .grass_footer{
   margin: -1px 0 0 0;
+}
+/* pagination css */
+.page-area nav{
+  display: inline-block;
+  text-align: center;
+  margin: 1.875rem 0 0 0;
+}
+.page-area nav ul{
+  margin: 0;
+}
+.page-area nav ul .page-link{
+  color: #35A936;
+  background-color: transparent;
+  border: none;
+}
+/* tab css */
+.nav-tabs{
+  border-bottom: 1px solid #35a936;
+}
+.nav-tabs .nav-item{
+  margin: 0 7.25rem 0 0;
+}
+.nav-tabs .nav-item:last-child{
+  margin: 0;
+}
+.nav-tabs .nav-link{
+  position: relative;
+  color: #ffffff;
+  background-color: #35a936;
+  border-color: #35a936;
+  opacity: 0.3;
+  transition: opacity 0.2s;
+  -webkit-transform: perspective(6px) rotateX(0.93deg) translateZ(-1px);
+  transform: perspective(6px) rotateX(0.93deg) translateZ(-1px);
+  padding: 0.75rem 3.4375rem 0.55rem 3.4375rem;
+  margin: 0 0 -3px 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.nav-tabs .nav-item .nav-link span{
+  font-size: 1.125rem;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  opacity: 1;
+  border-color: #35a936;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: #ffffff;
+  background-color: #35a936;
+  border-color: #35a936;
+  opacity: 1;
 }

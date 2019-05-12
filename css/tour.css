@@ -1,0 +1,13 @@
+.springtravel_tour_wrap h2{
+  margin: -18% 0 0 0
+}
+.springtravel_tour_wrap .tour-tip{
+  margin: 1.875rem 0 1.875rem 0;
+}
+.springtravel_tour_wrap .tour-tip .tour-tip-text{
+  display: inline-block;
+  padding: 0 1.875rem 0 0;
+}
+.springtravel_tour_wrap h2.attraction-name{
+  margin: 0;
+}

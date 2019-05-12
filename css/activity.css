@@ -1,5 +1,8 @@
 .springtravel_activity_wrap h2{
-  margin: -12% 0 0 0
+  margin: -18% 0 0 0
+}
+.springtravel_activity_wrap .table-activity{
+  margin: -3.125rem 0 0 0;
 }
 .springtravel_activity_wrap .table-activity td{
   padding: 1.5625rem 0;
@@ -21,17 +24,4 @@
 .springtravel_activity_wrap .table-activity .activity-address{
   color: #5E5D5D;
   font-size: 1.25rem;
-}
-.springtravel_activity_wrap .page-area nav{
-  display: inline-block;
-  text-align: center;
-  margin: 1.875rem 0 0 0;
-}
-.springtravel_activity_wrap .page-area nav ul{
-  margin: 0;
-}
-.springtravel_activity_wrap .page-area nav ul .page-link{
-  color: #35A936;
-  background-color: transparent;
-  border: none;
 }
