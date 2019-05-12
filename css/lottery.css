@@ -67,6 +67,7 @@
 .bottombtn{
     border-radius: 35px 35px;
     color: #fff;
+    cursor: pointer;
     width: 150px;
     font-weight: 200;
     height: 58px;
@@ -82,4 +83,56 @@
 .noticewrap .notice{
     text-align: left;
     padding: 0 0 0 1rem;
+}
+.exampleModal{
+    
+}
+
+/* mobile cover menu end */
+
+@media (max-width: 575.98px) {
+    .twocolwrap .leftpart .leftpartcontent, .twocolwrap .rightpart .rightpartcontent{
+        padding: 20px 0;
+    }
+    .circlelist .circle{
+        font-size: 14px;
+        height: 79px;
+        line-height: 79px;
+        width: 79px;
+    }
+    .leftpartcontent{
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .circlelist .circle{
+        font-size: 14px;
+        height: 75px;
+        line-height: 75px;
+        width: 75px;
+    }
+    .leftpartcontent{
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .leftpartcontent{
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .circlelist .circle{
+        height: 85px;
+        line-height: 85px;
+        width: 85px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+}
+
+@media (min-width: 1600px) {
 }
