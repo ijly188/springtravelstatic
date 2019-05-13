@@ -11,3 +11,44 @@
 .springtravel_tour_wrap h2.attraction-name{
   margin: 0;
 }
+.springtravel_tour_wrap .attraction-name i {
+  font-size: 30px;
+  color: #35a936;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  float: right;
+}
+
+.springtravel_tour_wrap .attraction-name i.rotate.down {
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+.springtravel_tour_wrap .attraction-name .btn-attraction{
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+.springtravel_tour_wrap .attraction-name .attraction-name-link{
+  text-align: left;
+}
+.springtravel_tour_wrap .attraction-name .attraction-name-link a{
+  font-size: 1.75rem;
+  color: #35a936;
+}
+.springtravel_tour_wrap .accordion{
+  padding: 0 1.25rem;
+}
+.springtravel_tour_wrap .accordion>.card .card-header{
+  margin: 0;
+}
+.springtravel_tour_wrap .card{
+  background-color: transparent;
+  border-bottom: 1px solid #35a936;
+  border-radius: 0;
+}
+.springtravel_tour_wrap .card-header{
+  border: none;
+  background-color: transparent;
+}
