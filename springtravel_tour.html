@@ -259,7 +259,7 @@
                     sHtml[sHtml.length] = '<div class="card">'
                     sHtml[sHtml.length] = '<div class="card-header" id="headingOne">'
                     sHtml[sHtml.length] = '<h2 class="attraction-name">'
-                    sHtml[sHtml.length] = '<button class="btn btn-link btn-attraction" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">'
+                    sHtml[sHtml.length] = '<button class="btn btn-link btn-attraction" type="button" data-toggle="collapse" data-target="#collapse' + i + '" aria-expanded="true" aria-controls="collapseOne">'
                     sHtml[sHtml.length] = '<div class="row no-gutters align-items-center">'
                     sHtml[sHtml.length] = '<div class="col-6 attraction-name-link">'
                     sHtml[sHtml.length] = '<a href="##" target="_blank">' + arrayforrender[i]["SpotName"] + '</a>'
@@ -272,7 +272,7 @@
                     sHtml[sHtml.length] = '</h2>'
                     sHtml[sHtml.length] = '</div>'
 
-                    sHtml[sHtml.length] = '<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">'
+                    sHtml[sHtml.length] = '<div id="collapse' + i + '" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">'
                     sHtml[sHtml.length] = '<div class="card-body">'
                     sHtml[sHtml.length] = arrayforrender[i]["SpotIntro"]
                     sHtml[sHtml.length] = '</div>'
