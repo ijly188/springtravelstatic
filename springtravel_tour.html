@@ -228,24 +228,6 @@
             endColumn: 3,
         };
 
-        // function getdata(parameter) {
-        //     $.ajax({
-        //         // 這邊用get type
-        //         type: "get",
-        //         // api url - google appscript 產出的 url
-        //         url: "https://script.google.com/macros/s/AKfycbwl-49baM0BJZCUnPEtfotiueLl2i6llmMjZFVdrfY8F6IdaeE/exec",
-        //         // 剛剛整理好的資料帶入
-        //         data: parameter,
-        //         // 資料格式是JSON
-        //         dataType: "JSON",
-        //         // 成功送出 會回頭觸發下面這塊感謝
-        //         success: function(response) {
-        //             console.log(response);
-        //         }
-        //     });
-        // };
-        // getdata(parameter);
-
         $.get('https://script.google.com/macros/s/AKfycbwl-49baM0BJZCUnPEtfotiueLl2i6llmMjZFVdrfY8F6IdaeE/exec', parameter, function(data) {
           // console.log(data);
           let array = data;
@@ -264,14 +246,48 @@
           };
           for(let i = 0; i < row; i++){
               let item = {
-                "SpotName":newarray[ 1 + ( i * column ) ],
-                "SpotIntro":newarray[ 2 + ( i * column ) ],
-                "SpotImg":newarray[ 3 + ( i * column ) ],
+                "SpotName":newarray[ 0 + ( i * column ) ],
+                "SpotIntro":newarray[ 1 + ( i * column ) ],
+                "SpotImg":newarray[ 2 + ( i * column ) ],
               };
               arrayforrender.push(item);
               // console.log(newarray[ j + ( i * column ) ]);
           };
-              console.log(arrayforrender);
+          console.log(arrayforrender);
+
+          //totalitem_market_actions
+          if(arrayforrender.length > 0)
+            {
+              var sHtml = [];
+              for( let i = 0; i < arrayforrender.length; i++ )
+              {
+                // console.log(arrayforrender[i]["SpotName"]);
+
+                sHtml[sHtml.length] = '<div class="card">'
+                sHtml[sHtml.length] = '<div class="card-header" id="headingOne">'
+                sHtml[sHtml.length] = '<h2 class="attraction-name">'
+                sHtml[sHtml.length] = '<button class="btn btn-link btn-attraction" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">'
+                sHtml[sHtml.length] = '<div class="row no-gutters align-items-center">'
+                sHtml[sHtml.length] = '<div class="col-6 attraction-name-link">'
+                sHtml[sHtml.length] = '<a href="##" target="_blank">'+ arrayforrender[i]["SpotName"] + '</a>'
+                sHtml[sHtml.length] = '</div>'
+                sHtml[sHtml.length] = '<div class="col-6">'
+                sHtml[sHtml.length] = '<i class="icon-angle-right rotate"></i>'
+                sHtml[sHtml.length] = '</div>'
+                sHtml[sHtml.length] = '</div>'
+                sHtml[sHtml.length] = '</button>'
+                sHtml[sHtml.length] = '</h2>'
+                sHtml[sHtml.length] = '</div>'
+
+                sHtml[sHtml.length] = '<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">'
+                sHtml[sHtml.length] = '<div class="card-body">'
+                sHtml[sHtml.length] = arrayforrender[i]["SpotIntro"]
+                sHtml[sHtml.length] = '</div>'
+                sHtml[sHtml.length] = '</div>'
+                sHtml[sHtml.length] = '</div>'
+              }
+              $('#accordionExample').append(sHtml.join(''));
+            }
         });
     </script>
 </body>
