@@ -78,7 +78,7 @@
             <div class="col-sm-12 col-md-12 col-lg-12 tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="attraction" role="tabpanel" aria-labelledby="attraction-tab">
                 <div class="accordion" id="accordionExample">
-                  <div class="card">
+                  <!-- <div class="card">
                     <div class="card-header" id="headingOne">
                       <button class="btn btn-link btn-attraction" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="row no-gutters align-items-center">
@@ -163,7 +163,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">...</div>
@@ -307,22 +307,25 @@
         arrayforrender.push(item);
         // console.log(newarray[ j + ( i * column ) ]);
       };
+      // console.log(arrayforrender);
+      arrayforrender.splice(0,1);
+      arrayforrender.splice(-1,1);
       console.log(arrayforrender);
 
       //totalitem_market_actions
       if (arrayforrender.length > 0) {
         var sHtml = [];
         for (let i = 0; i < arrayforrender.length; i++) {
-          // console.log(arrayforrender[i]["SpotName"]);
+          // console.log(arrayforrender[i]["SpotImg"]);
 
           sHtml[sHtml.length] = '<div class="card">'
-          sHtml[sHtml.length] = '<div class="card-header" id="headingOne">'
+          sHtml[sHtml.length] = '<div class="card-header" id="heading' + i + '">'
           sHtml[sHtml.length] = '<h2 class="attraction-name">'
-          sHtml[sHtml.length] = '<button class="btn btn-link btn-attraction" type="button" data-toggle="collapse" data-target="#collapse' + i + '" aria-expanded="true" aria-controls="collapseOne">'
+          sHtml[sHtml.length] = '<button class="btn btn-link btn-attraction" type="button" data-toggle="collapse" data-target="#collapse' + i + '" aria-expanded="true" aria-controls="collapse' + i + '">'
           sHtml[sHtml.length] = '<div class="row no-gutters align-items-center">'
-          sHtml[sHtml.length] = '<div class="col-6 attraction-name-link">'
-          sHtml[sHtml.length] = '<a href="##" target="_blank">' + arrayforrender[i]["SpotName"] + '</a>'
-          sHtml[sHtml.length] = '</div>'
+          sHtml[sHtml.length] = '<h2 class="col-6 attraction-name">'
+          sHtml[sHtml.length] = arrayforrender[i]["SpotName"]
+          sHtml[sHtml.length] = '</h2>'
           sHtml[sHtml.length] = '<div class="col-6">'
           sHtml[sHtml.length] = '<i class="icon-angle-right rotate"></i>'
           sHtml[sHtml.length] = '</div>'
@@ -330,10 +333,21 @@
           sHtml[sHtml.length] = '</button>'
           sHtml[sHtml.length] = '</h2>'
           sHtml[sHtml.length] = '</div>'
-
-          sHtml[sHtml.length] = '<div id="collapse' + i + '" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">'
+          sHtml[sHtml.length] = '<div id="collapse' + i + '" class="collapse" aria-labelledby="heading' + i + '" data-parent="#accordionExample">'
           sHtml[sHtml.length] = '<div class="card-body">'
+          sHtml[sHtml.length] = '<div class="row">'
+          sHtml[sHtml.length] = '<div class="col-sm-12 col-md-6 col-lg-6 attraction-img">'
+          if(arrayforrender[i]["SpotImg"] == 'EX_圖片(填入圖片檔名，如果沒有圖片就空白)' || '' || "" || null || 'null' || "end"){
+            sHtml[sHtml.length] = '<img src="image/1.jpg" class="img-fluid" alt="Responsive image">'
+          } else {
+            sHtml[sHtml.length] = '<img src="image/' + arrayforrender[i]["SpotImg"] + '" class="img-fluid" alt="Responsive image">'
+          }
+
+          sHtml[sHtml.length] = '</div>'
+          sHtml[sHtml.length] = '<div class="col-6 attraction-intro">'
           sHtml[sHtml.length] = arrayforrender[i]["SpotIntro"]
+          sHtml[sHtml.length] = '</div>'
+          sHtml[sHtml.length] = '</div>'
           sHtml[sHtml.length] = '</div>'
           sHtml[sHtml.length] = '</div>'
           sHtml[sHtml.length] = '</div>'
