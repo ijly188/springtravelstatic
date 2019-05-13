@@ -337,10 +337,16 @@
           sHtml[sHtml.length] = '<div class="card-body">'
           sHtml[sHtml.length] = '<div class="row">'
           sHtml[sHtml.length] = '<div class="col-sm-12 col-md-6 col-lg-6 attraction-img">'
-          if(arrayforrender[i]["SpotImg"] == 'EX_圖片(填入圖片檔名，如果沒有圖片就空白)' || '' || "" || null || 'null' || "end"){
+          
+          //  || '' || "end"
+          if(arrayforrender[i]["SpotImg"] === 'EX_圖片(填入圖片檔名，如果沒有圖片就空白)'){
+            sHtml[sHtml.length] = '<img src="image/1.jpg" class="img-fluid" alt="Responsive image">'
+          } else if(arrayforrender[i]["SpotImg"] === ''){
+            sHtml[sHtml.length] = '<img src="image/1.jpg" class="img-fluid" alt="Responsive image">'
+          } else if(arrayforrender[i]["SpotImg"] === 'end'){
             sHtml[sHtml.length] = '<img src="image/1.jpg" class="img-fluid" alt="Responsive image">'
           } else {
-            sHtml[sHtml.length] = '<img src="image/' + arrayforrender[i]["SpotImg"] + '" class="img-fluid" alt="Responsive image">'
+            sHtml[sHtml.length] = '<img src="' + arrayforrender[i]["SpotImg"] + '" class="img-fluid" alt="Responsive image">'
           }
 
           sHtml[sHtml.length] = '</div>'
