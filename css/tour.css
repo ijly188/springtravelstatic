@@ -68,3 +68,6 @@
 .springtravel_tour_wrap .card-body .attraction-intro{
   text-align: justify;
 }
+.springtravel_tour_wrap .hotel-intro{
+  padding: .75rem 1.25rem 0 1.25rem;
+}
