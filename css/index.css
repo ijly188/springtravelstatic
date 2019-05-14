@@ -262,51 +262,6 @@
 /* the index layout end */
 
 
-/* mobile cover menu start */
-
-.mobile_menu_wrap {
-	background: #f36902;
-	display: block;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1050;
-}
-
-.mobile_menu_wrap a.menu_wrap_brand {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	margin-left: -84px;
-}
-
-.mobile_menu_wrap .menu_close {
-	color: #fff;
-	font-size: 50px;
-	font-weight: 200;
-	margin-right: 5%;
-	margin-top: 1%;
-}
-
-#mobile_menu .navbar-nav {
-	margin: 0 0 0 -48px;
-	padding: 0;
-	top: 40%;
-	position: absolute;
-	left: 50%;
-	text-align: center;
-}
-
-.menu-start-toggle-action-btn {
-	border: 0;
-	color: #f36902!important;
-}
-
-
-/* mobile cover menu end */
-
 @media (max-width: 575.98px) {
 	.container .navbar-brand.router-link-exact-active.router-link-active {
 		margin-left: 29px;
