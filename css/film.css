@@ -22,10 +22,18 @@
 
 
 @media (max-width: 575.98px) {
+	.youtubevedio{
+        height: 170px;
+        margin: 2rem 0;
+    }
 	
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.youtubevedio{
+        height: 175px;
+        margin: 2rem 0;
+    }
 	
 }
 
