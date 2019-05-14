@@ -188,3 +188,12 @@ p{
 	border: 0;
 	color: #f36902!important;
 }
+.tooltip .arrow:before{
+  border-bottom-color: #ffffff;
+}
+.tooltip-inner{
+  background-color: #ffffff;
+  color: #35a936;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}

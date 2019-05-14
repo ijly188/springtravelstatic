@@ -5,6 +5,9 @@
   border-radius: 20px;
   margin: 0 0 1rem 0;
 }
+.springtravel_info_wrap .video-area img{
+  max-width: 100%;
+}
 .springtravel_info_wrap .video-title{
   margin: 0 0 6.25rem 0;
   font-weight: normal;
