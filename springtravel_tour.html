@@ -130,7 +130,7 @@
             <div class="col-12">
               <nav aria-label="Page navigation example">
                 <ul class="pagination">
-                  
+
                 </ul>
               </nav>
             </div>
@@ -207,17 +207,17 @@
         ary1 = url.split('?');
         //此時ary1裡的內容為：
         //ary1[0] = 'index.aspx'，ary2[1] = 'id=U001&name=GQSM'
-        
+
         //下一步把後方傳遞的每組資料各自分割
         ary2 = ary1[1].split('&');
         //此時ary2裡的內容為：
         //ary2[0] = 'id=U001'，ary2[1] = 'name=GQSM'
-        
+
         //最後如果我們要找id的資料就直接取ary[0]下手，name的話就是ary[1]
         ary3 = ary2[0].split('=');
         //此時ary3裡的內容為：
         //ary3[0] = 'id'，ary3[1] = 'U001'
-        
+
         //取得id值
         page = ary3[1];
       }
@@ -226,7 +226,7 @@
       if(page == undefined){
         page = 1;
       };
-      
+
       // 這是現在要顯示的頁面
       let urlpage = page;
 
@@ -282,7 +282,7 @@
       // $('.pagination')
 
 
-      
+
 
       //totalitem_market_actions
       if (newarrayforfilterdata.length > 0) {
@@ -295,9 +295,9 @@
           sHtml[sHtml.length] = '<h3 class="attraction-name">'
           sHtml[sHtml.length] = '<button class="btn btn-link btn-attraction" type="button" data-toggle="collapse" data-target="#collapse' + i + '" aria-expanded="true" aria-controls="collapse' + i + '">'
           sHtml[sHtml.length] = '<div class="row no-gutters align-items-center">'
-          sHtml[sHtml.length] = '<h2 class="col-6 attraction-name">'
+          sHtml[sHtml.length] = '<h3 class="col-6 attraction-name">'
           sHtml[sHtml.length] = newarrayforfilterdata[i]["SpotName"]
-          sHtml[sHtml.length] = '</h2>'
+          sHtml[sHtml.length] = '</h3>'
           sHtml[sHtml.length] = '<div class="col-6">'
           sHtml[sHtml.length] = '<i class="icon-angle-right rotate"></i>'
           sHtml[sHtml.length] = '</div>'
