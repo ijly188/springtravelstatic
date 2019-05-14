@@ -71,3 +71,53 @@
 .springtravel_tour_wrap .hotel-intro{
   padding: .75rem 1.25rem 0 1.25rem;
 }
+.springtravel_tour_wrap .recommend-list{
+  margin: 0;
+  padding: 0;
+  padding: .75rem 1.25rem 0 1.25rem;
+  list-style: none;
+  text-align: left;
+}
+.springtravel_tour_wrap .recommend-list h3{
+  font-size: 1.75rem;
+  color: #35a936;
+}
+.springtravel_tour_wrap .recommend-list li{
+  border-bottom: 1px solid #35a936;
+  margin: 0 0 1rem 0;
+}
+.springtravel_tour_wrap .recommend-list .recommend-list-detail{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.springtravel_tour_wrap .recommend-list .recommend-list-detail{
+  text-align: center;
+  font-weight: normal;
+}
+.springtravel_tour_wrap .recommend-list .recommend-list-detail li{
+  display: flex;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #35a936;
+  border: none;
+}
+.springtravel_tour_wrap .recommend-list .recommend-list-detail li:after{
+  padding: 0 0 0 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: "fontello";
+  content: '\f105';
+}
+.springtravel_tour_wrap .recommend-list .recommend-list-detail li span.recommend-name{
+  display: inline-flex;
+  width: 100%;
+  max-height: 45px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.springtravel_tour_wrap .recommend-list .recommend-list-detail li:last-child:after{
+  content: '';
+}
